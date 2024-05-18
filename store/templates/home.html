@@ -15,7 +15,7 @@
         <!-- Bootstrap icons-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="{%static 'css/styles.css' %}" rel="stylesheet" />
+        <link href="{% static 'css/styles.css' %}" rel="stylesheet" />
     </head>
     <body>
         <!-- Navigation-->
@@ -51,8 +51,8 @@
         <header class="bg-dark py-5">
             <div class="container px-4 px-lg-5 my-5">
                 <div class="text-center text-white">
-                    <h1 class="display-4 fw-bolder">Shop in style</h1>
-                    <p class="lead fw-normal text-white-50 mb-0">With this shop hompeage template</p>
+                    <h1 class="display-4 fw-bolder">Welcome to Liam E_Commerce</h1>
+                    <p class="lead fw-normal text-white-50 mb-0">Find your products here</p>
                 </div>
             </div>
         </header>
@@ -64,10 +64,8 @@
 
                  {% for product in products %}
                     {% if products.is_sale %}
-              
+
                     {% else%}
-
-
                     <div class="col mb-5">
                         <div class="card h-100">
                             <!-- Product image-->
@@ -90,6 +88,11 @@
                             </div>
                         </div>
                     </div>
+              
+                            
+
+
+                    
              
                     {% endif %}
 
